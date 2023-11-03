@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  lodash:
+    specifier: ^4.17.21
+    version: registry.npmmirror.com/lodash@4.17.21
   react:
     specifier: ^18.2.0
     version: registry.npmmirror.com/react@18.2.0
@@ -25,6 +28,9 @@ devDependencies:
   '@babel/preset-typescript':
     specifier: ^7.23.2
     version: registry.npmmirror.com/@babel/preset-typescript@7.23.2(@babel/core@7.23.2)
+  '@types/lodash':
+    specifier: ^4.14.200
+    version: registry.npmmirror.com/@types/lodash@4.14.200
   '@types/react':
     specifier: ^18.2.34
     version: registry.npmmirror.com/@types/react@18.2.34
@@ -40,6 +46,9 @@ devDependencies:
   html-webpack-plugin:
     specifier: ^5.5.3
     version: registry.npmmirror.com/html-webpack-plugin@5.5.3(webpack@5.89.0)
+  terser-webpack-plugin:
+    specifier: ^5.3.9
+    version: registry.npmmirror.com/terser-webpack-plugin@5.3.9(webpack@5.89.0)
   typescript:
     specifier: ^5.2.2
     version: registry.npmmirror.com/typescript@5.2.2
@@ -1811,6 +1820,12 @@ packages:
     resolution: {integrity: sha512-U3PUjAudAdJBeC2pgN8uTIKgxrb4nlDF3SF0++EldXQvQBGkpFZMSnwQiIoDU77tv45VgNkl/L4ouD+rEomujw==, tarball: https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.14.tgz}
     name: '@types/json-schema'
     version: 7.0.14
+    dev: true
+
+  registry.npmmirror.com/@types/lodash@4.14.200:
+    resolution: {integrity: sha512-YI/M/4HRImtNf3pJgbF+W6FrXovqj+T+/HpENLTooK9PnkacBsDpeP3IpHab40CClUfhNmdM2WTNP2sa2dni5Q==, tarball: https://registry.npmmirror.com/@types/lodash/-/lodash-4.14.200.tgz}
+    name: '@types/lodash'
+    version: 4.14.200
     dev: true
 
   registry.npmmirror.com/@types/mime@1.3.4:
@@ -3712,7 +3727,6 @@ packages:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==, tarball: https://registry.npmmirror.com/lodash/-/lodash-4.17.21.tgz}
     name: lodash
     version: 4.17.21
-    dev: true
 
   registry.npmmirror.com/loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==, tarball: https://registry.npmmirror.com/loose-envify/-/loose-envify-1.4.0.tgz}
