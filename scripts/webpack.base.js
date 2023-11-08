@@ -50,6 +50,18 @@ module.exports = {
         ],
         exclude: /node-modules/,
       },
+      {
+        test: /\.(png|jpe?g|gif|svg|webp)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 2000
+            },
+          }
+        ],
+      },
     ]
   },
   plugins: [
