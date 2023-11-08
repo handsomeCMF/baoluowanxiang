@@ -33,6 +33,23 @@ module.exports = {
           }
         }
       },
+      {
+        test: /\.(css|less)$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [['postcss-preset-env', {}]]
+              },
+            },
+          },
+          'less-loader',
+        ],
+        exclude: /node-modules/,
+      },
     ]
   },
   plugins: [
