@@ -3,7 +3,7 @@ import './App.less';
 import leiShen from './assets/image/2.jpg';
 import XiaoCaoShen from './assets/image/1.jpg';
 import { Tabs, Box, Tab, Typography } from '@mui/material';
-import 'core-js';
+import TextTable from './views/test';
 
 const mhyGameList : Array<{ label: string }> = [
   { label: '原神' },
@@ -68,6 +68,7 @@ const App: React.FC = () => {
       </CustomTabPanel>
       <CustomTabPanel value={selectedTab} index={3}>
         <h1>hello 绝区零</h1>
+        <TextTable />
       </CustomTabPanel>
     </div>
   )
