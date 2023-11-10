@@ -51,13 +51,13 @@ module.exports = {
         exclude: /node-modules/,
       },
       {
-        test: /\.(png|jpe?g|gif|svg|webp)$/i,
+        test: /\.(jpg|png|jpe?g|gif|svg|webp)$/i,
         use: [
-          'file-loader',
+          // 'file-loader',
           {
             loader: 'url-loader',
             options: {
-              limit: 2000
+              limit: 2000 * 1024 //单位是bytes
             },
           }
         ],
@@ -69,4 +69,5 @@ module.exports = {
       template: path.resolve(__dirname, '../index.html')
     }),
   ],
+  stats: 'errors-warnings',
 }
