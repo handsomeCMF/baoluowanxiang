@@ -8,7 +8,11 @@ module.exports = {
     filename: 'baoluowanxiang-webpack.bundle.js'
   },
   resolve: {
-    extensions: ['.mjs', '.js', '.json', '.jsx', '.ts', '.tsx']
+    extensions: ['.mjs', '.js', '.json', '.jsx', '.ts', '.tsx'],
+    alias: {
+      // 'store': path.require(__dirname, 'src/store/'),
+      // 'utils': path.require(__dirname, 'src/utils/')
+    },
   },
   module: {
     rules: [
