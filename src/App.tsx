@@ -1,11 +1,11 @@
 import * as React from 'react';
 import './App.less';
-import leiShen from './assets/image/2.jpg';
-import XiaoCaoShen from './assets/image/1.jpg';
+import leiShen from '@assets/image/2.jpg';
+import XiaoCaoShen from '@assets/image/1.jpg';
 import { Tabs, Box, Tab, Typography } from '@mui/material';
-import { useAppDispatch, useAppSelector } from './utils/hooks';
-import { RootState } from './store/store';
-import { changeTab } from './store/gameTab/tabSlice';
+import { useAppDispatch, useAppSelector } from '@utils/hooks';
+import { RootState } from '@store/store';
+import { changeTab } from '@store/gameTab/tabSlice';
 
 const mhyGameList : Array<{ label: string }> = [
   { label: '原神' },
@@ -61,7 +61,8 @@ const App = () => {
       <CustomTabPanel value={tab} index={0}>
         <h1>hello 原神</h1>
         <img src={leiShen} width={900} height={400}/>
-        <img src={XiaoCaoShen} width={900} height={400}/> --小草神比雷神出来的更快
+        {/* 小草神比雷神出来的更快 */}
+        <img src={XiaoCaoShen} width={900} height={400}/>
       </CustomTabPanel>
       <CustomTabPanel value={tab} index={1}>
         <h1>hello 崩坏·星穹铁道</h1>

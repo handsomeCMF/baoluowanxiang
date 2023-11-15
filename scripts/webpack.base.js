@@ -10,8 +10,10 @@ module.exports = {
   resolve: {
     extensions: ['.mjs', '.js', '.json', '.jsx', '.ts', '.tsx'],
     alias: {
-      // 'store': path.require(__dirname, 'src/store/'),
-      // 'utils': path.require(__dirname, 'src/utils/')
+      '@/': path.resolve(__dirname, '../src/'),
+      '@store': path.resolve(__dirname, '../src/store/'),
+      '@utils': path.resolve(__dirname, '../src/utils/'),
+      '@assets': path.resolve(__dirname, '../src/assets/'),
     },
   },
   module: {
