@@ -13,4 +13,7 @@ module.exports = {
     '@typescript-eslint'
   ],
   ignorePatterns: ['.eslintrc.js', '*.js'],
+  rules: {
+    "@typescript-eslint/no-explicit-any": "off" // 使用any 不提示报错
+  }
 }

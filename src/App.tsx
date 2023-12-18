@@ -48,6 +48,11 @@ const App = () => {
   const handleChangeTab = (event: React.SyntheticEvent, newValue: number) => {
     dispatch(changeTab(newValue));
   };
+
+  React.useEffect(() => {
+    
+  }, []);
+  
   return (
     <div>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>

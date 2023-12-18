@@ -6,3 +6,6 @@
 # 心海 - 休养生息。
 # 妮露 - 准备跳喽。和浪花共舞吧
 # 纳西妲 - 此即智慧之殿堂 全都看见咯。等下有点痛哦。
+
+
+# JSON字符串转TypeScript的Interface https://xiets.gitee.io/json-to-any-web/
