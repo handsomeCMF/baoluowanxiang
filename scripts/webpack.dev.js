@@ -6,6 +6,11 @@ module.exports = merge(base, {
   devServer: {
     port: 6060,
     open: true, // 是否自动打开浏览器
+    proxy: [{
+      context: ['/Mihayou'],
+      target: 'http://localhost:6061',
+      changeOrigin: true,
+    }],
   },
   // module: {
   //   rules: [
