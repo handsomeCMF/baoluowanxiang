@@ -28,8 +28,8 @@ const GenshinImpact = () => {
   }, []);
 
   return (
-    <Typography component="div">
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+    <Typography component="div" display="flex">
+      <Box sx={{ borderBottom: 1, borderColor: 'divider', width: 160 }}>
         <Tabs value={selectedCharacter} onChange={handleChangeTab} orientation='vertical' aria-label='角色菜单'>
           {characterList.map((gameItem : { label: string }) => (
             <Tab label={gameItem.label} key={gameItem.label} />
